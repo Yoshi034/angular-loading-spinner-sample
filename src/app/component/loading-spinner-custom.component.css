@@ -1,0 +1,177 @@
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(225, 225, 225, 0.5);
+  z-index: 1000000;
+}
+
+.m-progress {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.m-progress .m-progress-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.m-progress .m-progress-item:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 12%;
+  height: 18%;
+  background-color: #9e9e9e;
+  border-radius: 6px;
+  -webkit-animation: m-progress-itemFadeDelay 1.2s infinite ease-in-out both;
+  animation: m-progress-itemFadeDelay 1.2s infinite ease-in-out both;
+}
+
+.m-progress .m-progress-item2 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.m-progress .m-progress-item3 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.m-progress .m-progress-item4 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.m-progress .m-progress-item5 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.m-progress .m-progress-item6 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.m-progress .m-progress-item7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.m-progress .m-progress-item8 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+.m-progress .m-progress-item9 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+.m-progress .m-progress-item10 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.m-progress .m-progress-item11 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+.m-progress .m-progress-item12 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+.m-progress .m-progress-item2:before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.m-progress .m-progress-item3:before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.m-progress .m-progress-item4:before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.m-progress .m-progress-item5:before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.m-progress .m-progress-item6:before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+.m-progress .m-progress-item7:before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.m-progress .m-progress-item8:before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.m-progress .m-progress-item9:before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.m-progress .m-progress-item10:before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.m-progress .m-progress-item11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+.m-progress .m-progress-item12:before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@keyframes m-progress-itemFadeDelay {
+  0%,
+  39%,
+  100% {
+    opacity: 0;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    transform: scaleY(1);
+  }
+}
